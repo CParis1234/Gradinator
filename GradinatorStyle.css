@@ -1,0 +1,229 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #E6DEDC;
+    text-shadow: 0px 0px 2px #33617f;
+}
+
+.topstuff {
+    text-align: center;
+    margin: auto;
+    width: 85%;
+    min-width: 700px;
+    height: 15%;
+    background-color: #ff6c59;
+    color: white;
+    border-radius: 30px;
+    padding-top: 20px;
+}
+
+.InputArea {
+    content: "";
+    display: block;
+    clear: both;
+    width: 600px;
+    margin: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 6px;
+    color: #ff6c59;
+}
+
+#Goal {
+    width: 80px;
+    text-align: center;
+}
+
+.row {
+    display: inline-flex;
+    clear: both;
+    height: 50px;
+    margin: auto;
+    float: center;
+    width: 600px;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.whitetable {
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.titles {
+    display: inline-flex;
+    clear: both;    
+    min-width: 150px;
+    margin: 12px;
+    padding: 4px;
+    text-shadow: 0px 0px 20px white;
+}
+
+.Scores, .Weights {
+    padding: 4px;
+    margin: 12px;
+    min-width: 150px;
+}
+
+#topoftable {
+    height: 64px;
+    background-color: #71EEB8;
+    color: white;
+}
+
+#empty {
+    padding-right: 22.8px;
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 1px #33617f;
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#Grade {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+p {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #76DED7;
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    text-shadow: 0px 0px 20px #76DED7;
+}
+
+button:hover {
+    background-color: #71EEB8;
+    text-shadow: 0px 0px 20px #71EEB8;
+}
+
+input[type=text], select {
+    padding: 5px 5px;
+    display: inline-block;
+    border: 1px solid #E6DEDC;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #ff6c59;
+    font-size: 22px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #71EEB8;
+}
+
+::selection {
+    color: white;
+    background: #71EEB8;
+}
+
+select:active, select:hover {
+  outline-color: red
+}
+
+iframe {
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    background-color: #33617f;
+}
+
+.content {
+    width: 90%;
+    clear: both;
+    float: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.flip-container {
+    perspective: 1000px;
+}
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .front, .back {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: #ff6c59;
+    color: #ff6c59;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background-color: #E6DEDC;
+    border-color: #76DED7;
+    border-style: solid;
+    color: #76DED7;
+    font-style: italic;
+}
+
+a.nav-link:link
+{
+   color: white;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: white;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: #76DED7;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: white;
+   text-decoration: none;
+}

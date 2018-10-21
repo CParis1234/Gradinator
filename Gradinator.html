@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Have a GRADE day!</title>
+
+	<link rel="stylesheet" type="text/css" href="GradinatorStyle.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+	
+  	<!-- Font 
+  	Favicon 
+	<link rel="icon" type="image/png" href="icon-ux-blue.png"> -->
+</head>
+
+<body>
+
+<div class="topstuff">
+	
+	<h1>Calculate what your grade could be.</h1>
+
+	<form>
+
+	<p>I want a <input type="text" id="Goal" value=""> in
+
+		<select id="classDrop" name="classDrop" onchange="updateWeight('myClass')">
+			<option id="generic">my class (select)</option>
+			<option id="MSE2001">MSE 2001</option>
+			<option id="ME3322">ME 3322</option>
+			<option id="ISYE3025">ISYE 3025</option>
+			<option id="ECE3741">ECE 3741</option>
+			<option id="SPAN2001">SPAN 2001</option>
+			<option id="PSYC2270">PSYC 2270</option>
+		</select>
+		
+	</p>
+
+	<!-- Output final grade -->
+	<p id="Grade"></p>
+<iframe hidden id="haha" width="560" height="315" src="https://www.youtube.com/embed/E6iN6VTL7v8" frameborder="0" allowfullscreen></iframe>
+	<!-- The Button -->
+	<button onclick="needFinal()">Grading Magic!</button>
+
+<h2>Enter your grades below or<A HREF="javascript:history.go(0)" class="nav-link"> reset the form.</A></h2>
+
+<div class="InputArea">
+
+	<div class="whitetable">
+		<!-- Input Categories, Scores, and Weights -->
+		<div class="row" id="topoftable">
+			<div class="Scores"></div>
+			<div class="Scores" id="empty"><h2>Score</h2></div>
+			<div class="Weights" id="empty"><h2>Weight</h2></div>
+		</div>
+
+		<div class="row">
+			<div class="titles">Tests</div>
+			<input type="text" class="Scores" id="Test_S" value="0">
+			<input type="text" class="Weights" id="Test_W" value="0">
+		</div>	
+
+		<div class="row">
+			<div class="titles">Homework</div>
+			<input type="text" class="Scores" id="Home_S" value="0">
+			<input type="text" class="Weights" id="Home_W" value="0">
+		</div>	
+			
+		<div class="row">	
+			<div class="titles">Quiz</div>
+			<input type="text" class="Scores" id="Quiz_S" value="0">
+			<input type="text" class="Weights" id="Quiz_W" value="0">
+		</div>		
+			
+		<div class="row">	
+			<div class="titles">Class Participation</div>
+			<input type="text" class="Scores" id="Part_S" value="0">
+			<input type="text" class="Weights" id="Part_W" value="0">
+		</div>		
+			
+		<div class="row">	
+			<div class="titles">Extra Credit</div>
+			<input type="text" class="Scores" id="EC_S" value="0">
+			<div class="Weights" id="empty"></div>
+		</div>
+
+		<div class="row">
+			<div class="titles">Final Exam</div>
+			<div class="Scores" id="empty"></div>
+			<input type="text" class="Weights" id="Final_W" value="0">
+		</div>
+	</div>
+</div>
+
+	<div hidden class="content" id="tips">
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<p>HEY LOOK!</p>
+				</div>
+				<div class="back">
+					<p hidden id="A">Study Tip: Go through your notes and write short summaries of each section.</p>
+					<p hidden id="B">Study Tip: Check out Youtube for video tutorials on concepts you're confused about.</p>	
+					<p hidden id="C">Study Tip: Reviewing with friends is a great way to study.  Just don't get distracted.</p>					
+					<p hidden id="D">Study Tip: I firmly believe you can do this.</p>					
+					<p hidden id="F">Study Tip: Wow you're in great shape! Might I recommend Stranger Things?</p>											
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</form>
+</div>
+<script type="text/javascript" src="needFinal.js"></script>
+<!--<script src="http://cs1371.gatech.edu/getClassInfo/?class=CS1371"></script>-->
+
+
+</body>
+
+</html>
