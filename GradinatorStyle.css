@@ -200,11 +200,13 @@ iframe {
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
-    background-color: #E6DEDC;
+    background-color: white;
     border-color: #76DED7;
     border-style: solid;
     color: #76DED7;
     font-style: italic;
+    border-radius: 30px;
+
 }
 
 a.nav-link:link
